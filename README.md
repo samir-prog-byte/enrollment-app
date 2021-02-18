@@ -1,6 +1,6 @@
 # Enrollment
 
-Enrollement Search is an application that fetches the list of all enrollees. The UI of this application is build on Angular and ulitizes Deno microservice API to retrive the desired list.
+Enrollement Search is an application that fetches the list of all enrollees. The UI of this application is build on Angular and utilizes Deno microservice API to retrive the desired list.
 
 
 - Users can view a list of all enrollees in the system
@@ -11,11 +11,11 @@ Enrollement Search is an application that fetches the list of all enrollees. The
 ## Screenshots
 
 ### `Enrollee List`
-![Alt text](/src/assets/EnrolleeList.PNG?raw=true "Enrollee List")
+![Alt text](/src/assets/EnrolleeList.png?raw=true "Enrollee List")
 
 
 ### `Enrollee Details Update`
-![Alt text](/src/assets/EnrolleeDetails.PNG?raw=true "Enrollee Details Update")
+![Alt text](/src/assets/EnrolleeDetails.png?raw=true "Enrollee Details Update")
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
