@@ -1,0 +1,44 @@
+
+
+<mat-card>
+
+<h4>Click on row to update</h4>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Id Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}}</td>
+  </ng-container>
+
+  <!-- Date of Birth Column -->
+  <ng-container matColumnDef="dateOfBirth">
+    <th mat-header-cell *matHeaderCellDef> Date of Birth </th>
+    <td mat-cell *matCellDef="let element"> {{element.dateOfBirth | date: 'longDate'}} </td>
+  </ng-container>
+
+  <!-- Active Column -->
+  <ng-container matColumnDef="active">
+    <th mat-header-cell *matHeaderCellDef> Activation Status</th>
+    <td mat-cell *matCellDef="let element">
+  <mat-icon aria-hidden="false" aria-label="icon">{{ element.active ? 'done' : 'close'}}</mat-icon>
+
+
+  </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/enroll-details/', row.id ]" class="cursor-pointer" ></tr>
+</table>
+
+
+</mat-card>
